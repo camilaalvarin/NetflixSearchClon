@@ -1,0 +1,44 @@
+.searchDiv {
+    display: flex;
+    border: 1px solid white;
+    margin-top: 15px;
+}
+
+input {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: none;
+    border-left: none;
+    
+    border: none;
+    background-color: #0e0e0e;
+    color: white;
+    height: 25px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.icons {
+    color: white;
+    width: 22px;
+    height: 21px;
+    margin-top: 3px;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+@media (max-width: 630px) {
+    input {
+        width: 90%;
+    }
+
+    .searchDiv {
+        display: flex;
+        border: 1px solid white;
+        margin-top: 15px;
+        width: 85vw;
+    }
+}

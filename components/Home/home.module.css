@@ -1,0 +1,68 @@
+h1, h4 {
+    color: white;
+}
+
+.prob {
+    background-color: #0e0e0e;
+    padding-top: 50px;
+    height: fit-content;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 98%;
+}
+
+.relatedTitles {
+    max-width: 97%;
+    display: flex;
+    margin: 60px 0px 30px 3vw;
+}
+
+.explore {
+    display: flex;
+    margin-bottom: -20px;
+    max-width: 90%;
+    min-width: 170px;
+}
+
+.titlesDiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -4px;
+    margin-left: -15px;
+    text-align: start;
+}
+
+.titles {
+    margin-bottom: -10px;
+    margin-right: -20px;
+    text-align: start;
+    line-height: 1px;
+}
+
+@media (max-width: 630px) {
+    .prob {
+        margin: 0px 0px 30px 3vw;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .relatedTitles {
+        max-width: 96%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 60px 0px 30px 3vw;
+    }
+
+    .titlesDiv {
+        margin-left: 0px;
+    }
+
+    .explore {
+        margin-left: 3vw;
+    }
+}

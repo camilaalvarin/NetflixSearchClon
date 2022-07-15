@@ -1,0 +1,159 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0e0e0e;
+    width: 100vw;
+    height: 65px;
+    z-index: 2;
+}
+
+.netflix {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0px 0px 0px 25px;
+}
+
+.bell {
+    width: 30px;
+    height: 35px;
+    color: white;
+    margin: 10px 15px 0px 15px;
+    cursor: pointer;
+}
+.arrow {
+    width: 30px;
+    height: 30px;
+    color: white;
+    margin: 15px 25px 0px 0px;
+    cursor: pointer;
+}
+
+.menu {
+    color: white;
+    width: 45px;
+    height: 45px;
+    display: none;
+    cursor: pointer;
+}
+
+.image {
+    width: 37px;
+    height: 37px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+p {
+    color: white;
+    margin: 15px 8px 0px 8px;
+    cursor: pointer;
+}
+
+
+/* NAV DESKTOP */
+
+.navDesktop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navD {
+    display: flex;
+}
+
+.navD2 {
+    display: flex;
+}
+
+.navDiv3 {
+    display: flex;
+}
+
+/* NAV MOBILE */
+.navMobile {
+    display: none;
+}
+
+.navM {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* NAV MOBILE */
+
+.netflix:hover .navDesktop p {
+    opacity: 1;
+}
+
+@media (max-width: 1060px) {
+    .menu {
+        display: block;
+        margin: 8px 25px 0px 0px;
+    }
+
+    .arrow {
+        margin: 15px 0px 0px 0px;
+    }
+
+    .navDesktop p{
+        display: none;
+    }
+}
+
+@media (max-width: 630px) {
+    .navbar {
+        height: 101px;
+        z-index: 2;
+    }
+
+    .navDesktop {
+        display: none;
+    }
+
+    .navMobile {
+        display: block;
+    }
+
+    .navMobile p{
+        display: none;
+    }
+
+    .navM2 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navM3 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 290px) and (max-width: 340px) {
+    .netflix {
+        margin: 0px 0px 0px 2vw;
+    }
+
+    .menu {
+        margin: 8px 5px 0px 0px;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 290px) {
+    .netflix {
+        margin: 0px 0px 0px 1vw;
+    }
+
+    .menu {
+        margin: 8px 5px 0px 0px;
+        width: 35px;
+        height: 35px;
+    }
+}
