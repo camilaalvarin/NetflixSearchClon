@@ -6,21 +6,19 @@ import Home from "./components/Home/Home.js";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
-  const [delSearch, setDelSearch] = useState([]);
-  console.log("sfvcdzc");
-  console.log(delSearch);
+  const [moviesFound, setMoviesFound] = useState([]);
 
-  const onSearch = (toLook) => {
-    fetch(`https://imdb-api.com/API/Search/k_l8q1htwd/${toLook}`)
+  const onSearch = (movieToLook) => {
+    fetch(`https://imdb-api.com/API/Search/k_l8q1htwd/${movieToLook}`)
       .then((response) => response.json())
-      .then((data) => setDelSearch(data.results))
+      .then((data) => setMoviesFound(data.results))
       .catch((error) => console.log(error));
   };
 
   return (
     <div className="App">
       <Navbar onSearch={onSearch} />
-      <Home delSearch={delSearch} />
+      <Home delSearch={moviesFound} />
     </div>
   );
 }

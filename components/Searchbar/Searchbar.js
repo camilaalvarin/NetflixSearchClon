@@ -7,27 +7,27 @@ import { BsBellFill } from "react-icons/bs";
 
 
 function Searchbar( { onSearch } ) {
-  const [looking, setLooking] = useState("");
+  const [wantedMovie, setWantedMovie] = useState("");
 
   const onChange = (e) => {
-    setLooking(e.target.value);
+    setWantedMovie(e.target.value);
   };
 
   const onClick = (e) => {
     e.preventDefault();
-    onSearch(looking);
-    setLooking("");
+    onSearch(wantedMovie);
+    setWantedMovie("");
   };
 
   const clear = () => {
-    setLooking("");
+    setWantedMovie("");
   }
 
   return (
     <div>
       <div className={styles.searchDiv}>
         <HiOutlineSearch onClick={onClick} className={styles.icons} />
-        <input onChange={onChange} value={looking} />
+        <input onChange={onChange} value={wantedMovie} />
         <IoMdClose onClick={clear} className={styles.icons} />
       </div>
     </div>
